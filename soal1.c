@@ -53,7 +53,7 @@ void totul(struct pasien *head, int n, int *total){
         temp = temp->next;
         i++;
     }
-    printf("WAIT %d", *total);
+    printf("\nWAIT %d", *total);
     
 }
 int main(){
