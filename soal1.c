@@ -38,10 +38,11 @@ struct pasien *new = malloc(sizeof(struct pasien));
 void tampil(struct pasien *head){
     struct pasien *temp = head;
     printf("ORDER ");
-    while (temp != NULL){
+    while (temp->next != NULL){
         printf("%s ", temp->ID);
         temp = temp->next;
     }
+    printf("%s", temp->ID);
 }
 
 void totul(struct pasien *head, int n, int *total){
